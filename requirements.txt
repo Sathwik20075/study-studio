@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pillow
+pillow-heif
+pymupdf
+opencv-python-headless
+numpy
+# optional, better sticker cut-outs:
+# rembg[cpu]
