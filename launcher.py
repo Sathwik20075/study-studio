@@ -1,6 +1,8 @@
 import os, sys, threading, time, webbrowser
 from pathlib import Path
 import uvicorn
+os.environ.setdefault('MAX_UPLOAD_MB', '4000')
+os.environ.setdefault('RATE_PER_MIN', '100000')
 from backend.app import app
 
 if getattr(sys, "frozen", False):  # let the app find ffmpeg.exe placed next to the .exe
